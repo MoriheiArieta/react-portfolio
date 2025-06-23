@@ -3,7 +3,7 @@
  * @license Apache-2.0
  */
 
-import { ButtonPrimary } from "./Button";
+// import { ButtonPrimary } from "./Button";
 import { useLenis } from "lenis/react";
 
 /**
@@ -51,12 +51,12 @@ const Footer = () => {
   };
 
   // Email template for mailto link
-  const email = "arietamorihei@gmail.com";
-  const subject = "Project Inquiry from Ciaralou's Website";
-  const body = `Hi Ciaralou,\n\nI'm interested in working with you on a project. Here are some details:\n- Project Type: [e.g., Web Development, Design]\n- Timeline: [e.g., 2-3 months]\n- Budget: [e.g., $5000]\n\nPlease let me know your availability and next steps!\n\nBest regards,\n[Your Name]`;
-  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
-    subject
-  )}&body=${encodeURIComponent(body)}`;
+  //   const email = "arietamorihei@gmail.com";
+  //   const subject = "Project Inquiry from Ciaralou's Website";
+  //   const body = `Hi Ciaralou,\n\nI'm interested in working with you on a project. Here are some details:\n- Project Type: [e.g., Web Development, Design]\n- Timeline: [e.g., 2-3 months]\n- Budget: [e.g., $5000]\n\nPlease let me know your availability and next steps!\n\nBest regards,\n[Your Name]`;
+  //   const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+  //     subject
+  //   )}&body=${encodeURIComponent(body)}`;
 
   return (
     <footer className="section">
@@ -66,9 +66,9 @@ const Footer = () => {
             <h2 className="headline-1 mb-8 lg:max-w-[12ch]">
               Let&apos;s work together today!
             </h2>
-            <a href={mailtoLink}>
+            {/* <a href={mailtoLink}>
               <ButtonPrimary label="Start Project!" icon="chevron_right" />
-            </a>
+            </a> */}
           </div>
 
           <div className="grid grid-cols-2 gap-4 lg:pl-20">

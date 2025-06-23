@@ -138,28 +138,35 @@ const Maps = () => {
 
   return (
     <section id="work" className="section">
-      <div className="container mb-3">
+      <div className="container mb-0 px-4 sm:px-6 lg:px-8">
         <h2 className="headline-2 mb-3">Portfolio</h2>
         {/* Dropdown Header */}
-        <h2
-          className="headline-3 flex items-center cursor-pointer"
+        <div
+          className="group relative bg-zinc-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 mb-4 overflow-hidden cursor-pointer"
           onClick={toggleDropdown}
         >
-          {/* Google Icon for the dropdown arrow */}
-          <span className="material-symbols-rounded">
-            {isOpen ? "keyboard_arrow_down" : "chevron_right"}
-          </span>
-          Maps
-        </h2>
+          <h2 className="headline-3 flex items-center justify-between cursor-pointer p-4 text-gray-800 dark:text-gray-100 font-semibold text-lg sm:text-xl tracking-tight hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200 relative z-10">
+            <span className="flex items-center gap-2">
+              <span className="material-symbols-rounded transition-transform duration-300">
+                {isOpen ? "keyboard_arrow_down" : "chevron_right"}
+              </span>
+              Maps
+            </span>
+          </h2>
+          {/* Underline animation on hover or when open */}
+          <span
+            className={`absolute bottom-0 left-0 h-1 bg-[#b8798c] transition-all duration-300 ${
+              isOpen ? "w-full" : "w-0 lg:group-hover:w-full"
+            }`}
+          ></span>
+          {/* <span
+            className={`absolute bottom-0 left-0 h-1 bg-[#b8798c] transition-all duration-300 w-0 group-hover:w-full`}
+          ></span> */}
+        </div>
 
         {/* Dropdown Content */}
         {isOpen && (
-          <div className="mt-3 mb-8">
-            {/* <ColumnsPhotoAlbum
-              photos={mapImages}
-              spacing={4}
-              onClick={({ index }) => setIndex(index)}
-            /> */}
+          <div className="mt-3 mb-8 animate-fade-in">
             <PhotoAlbum
               layout="rows"
               onClick={({ index }) => setIndex(index)}

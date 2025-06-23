@@ -25,21 +25,21 @@ const skillItem = [
     desc: "Geobrowser",
   },
 
-  {
-    imgSrc: "/images/logos/onedrive_logo.svg",
-    label: "OneDrive",
-    desc: "Large-file Management",
-  },
-  {
-    imgSrc: "/images/logos/box_logo.svg",
-    label: "Box",
-    desc: "Cross-team Collaboration",
-  },
-  {
-    imgSrc: "/images/logos/salesforce_logo.svg",
-    label: "Salesforce",
-    desc: "Reporting",
-  },
+  // {
+  //   imgSrc: "/images/logos/onedrive_logo.svg",
+  //   label: "OneDrive",
+  //   desc: "Large-file Management",
+  // },
+  // {
+  //   imgSrc: "/images/logos/box_logo.svg",
+  //   label: "Box",
+  //   desc: "Cross-team Collaboration",
+  // },
+  // {
+  //   imgSrc: "/images/logos/salesforce_logo.svg",
+  //   label: "Salesforce",
+  //   desc: "Reporting",
+  // },
   {
     imgSrc: "/images/logos/microsoft_sharepoint_logo.svg",
     label: "Microsoft Sharepoint",
@@ -55,16 +55,16 @@ const skillItem = [
     label: "Microsoft Publisher",
     desc: "Formatting",
   },
-  {
-    imgSrc: "/images/logos/word_logo.svg",
-    label: "Microsoft Word",
-    desc: "",
-  },
-  {
-    imgSrc: "/images/logos/powerpoint_logo.svg",
-    label: "Microsoft Powerpoint",
-    desc: "",
-  },
+  // {
+  //   imgSrc: "/images/logos/word_logo.svg",
+  //   label: "Microsoft Word",
+  //   desc: "",
+  // },
+  // {
+  //   imgSrc: "/images/logos/powerpoint_logo.svg",
+  //   label: "Microsoft Powerpoint",
+  //   desc: "",
+  // },
   {
     imgSrc: "/images/logos/adobe_illustrator_logo.svg",
     label: "Adobe Illustrator",
@@ -85,11 +85,11 @@ const skillItem = [
   //   label: "Adobe Premiere Pro",
   //   desc: "",
   // },
-  {
-    imgSrc: "/images/logos/outlook_logo.svg",
-    label: "Outlook",
-    desc: "",
-  },
+  // {
+  //   imgSrc: "/images/logos/outlook_logo.svg",
+  //   label: "Outlook",
+  //   desc: "",
+  // },
   {
     imgSrc: "/images/logos/power_bi_logo.svg",
     label: "Power BI",
@@ -149,7 +149,7 @@ const Skill = () => {
           deliver high-quality graphics and visuals.
         </p>
 
-        <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
+        <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))]">
           {skillItem.map(({ imgSrc, label, desc }, key) => (
             <SkillCard key={key} imgSrc={imgSrc} label={label} desc={desc} />
           ))}

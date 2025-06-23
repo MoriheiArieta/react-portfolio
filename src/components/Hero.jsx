@@ -42,6 +42,7 @@ const Hero = () => {
               label="See CV"
               icon="visibility"
               href="https://drive.google.com/file/d/1eM8BHBVFOz9P80tZdktD_KVK643qmK-2/view"
+              target="_blank"
             />
             <ButtonOutline
               href="#work"

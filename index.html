@@ -35,5 +35,24 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBjLPXMEbl8GG6gRO-_nwS0hx4zJSCe490",
+        authDomain: "ciara-portfolio-e3a13.firebaseapp.com",
+        projectId: "ciara-portfolio-e3a13",
+        storageBucket: "ciara-portfolio-e3a13.firebasestorage.app",
+        messagingSenderId: "567430594852",
+        appId: "1:567430594852:web:96455d651b62c2720b33b1",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>

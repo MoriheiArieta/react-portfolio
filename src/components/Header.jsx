@@ -7,6 +7,7 @@
  * Node modules
  */
 import { useState } from "react";
+import { useLenis } from "lenis/react";
 
 /**
  * Components
@@ -15,6 +16,19 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const lenis = useLenis();
+
+  const handleContactClick = (event) => {
+    event.preventDefault();
+
+    // Smooth scroll to contact section using Lenis
+    if (lenis) {
+      lenis.scrollTo("#contact", {
+        duration: 1.5,
+        easing: (t) => 1 - Math.pow(1 - t, 3),
+      });
+    }
+  };
 
   return (
     <header className="fixed top-0 left-0 w-full h-20 flex items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0">
@@ -45,6 +59,7 @@ const Header = () => {
         </div>
         <a
           href="#contact"
+          onClick={handleContactClick}
           className="btn btn-secondary max-md:hidden md:justify-self-end"
         >
           Contact Me
