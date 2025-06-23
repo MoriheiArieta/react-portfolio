@@ -32,15 +32,19 @@ const Hero = () => {
             </div>
           </div>
 
-          <h2 className="headline-1 max-w-[25ch] sm:max-w-[30ch] lg:max-w-[25ch] mt-5 mb-8 lg:mb-10">
-            Transforming Data into Clear, Compelling Visual Stories for Smarter
-            Insights.
+          <h2 className="headline-1 max-w-[20ch] sm:max-w-[25ch] lg:max-w-[20ch] mt-5 mb-8 lg:mb-10">
+            Turning Data into Compelling Visual Stories for Smarter
+            Decision-Making.
           </h2>
 
           <div className="flex items-center gap-3">
-            <ButtonPrimary label="See CV" icon="visibility" />
+            <ButtonPrimary
+              label="See CV"
+              icon="visibility"
+              href="https://drive.google.com/file/d/1eM8BHBVFOz9P80tZdktD_KVK643qmK-2/view"
+            />
             <ButtonOutline
-              href="#about"
+              href="#work"
               label="See Portfolio"
               icon="arrow_downward"
             />

@@ -7,7 +7,7 @@
 \*------------------------*/
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -17,7 +17,9 @@ body {
 /*------------------------*\
  * TYPOGRAPHY
 \*------------------------*/
-.headline-1 {
+.headline-1,
+.headline-2,
+.headline-3 {
   @apply max-w-max;
   background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
   -webkit-background-clip: text;
@@ -25,7 +27,15 @@ body {
 }
 
 .headline-1 {
-  @apply text-3xl leading-tight font-semibold lg:text-[36px] lg:tracking-wider lg:leading-[1.15];
+  @apply text-3xl leading-tight font-bold lg:text-[40px] lg:tracking-wider lg:leading-[1.15];
+}
+
+.headline-2 {
+  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold;
+}
+
+.headline-3 {
+  @apply text-2xl lg:text-3xl lg:leading-tight font-semibold;
 }
 
 /*------------------------*\
@@ -46,6 +56,10 @@ body {
 
 .img-cover {
   @apply w-full h-full object-cover;
+}
+
+.section {
+  @apply pt-20 lg:pt-32;
 }
 
 /*------------------------*\
@@ -80,7 +94,7 @@ body {
 
 /* Button */
 .btn {
-  @apply max-w-max h-9 flex items-center gap-2 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color];
+  @apply max-w-max h-9 flex items-center gap-2 px-4 rounded-xl font-normal text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color];
 }
 
 .btn-secondary {
@@ -96,9 +110,30 @@ body {
 }
 
 .btn-primary {
-  @apply h-11 bg-[#b8798c] text-zinc-950 hover:bg-[#cda1af] active:bg-[#b8798c] font-semibold;
+  @apply h-11 bg-[#b8798c] text-zinc-950 hover:bg-[#cda1af] active:bg-[#b8798c] font-medium;
 }
 
 .btn-outline {
   @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800;
+}
+
+/* link */
+/* .styled-link {
+  @apply transition-transform duration-300 ease-in-out;
+}
+
+.styled-link:hover {
+  @apply -translate-y-2 shadow-md;
+} */
+
+.label {
+  @apply block text-zinc-200 text-sm font-normal mb-2;
+}
+
+.text-field {
+  @apply block outline-none w-full px-3  py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-[#b8798c] focus:ring-2;
+}
+
+.text-field::placeholder {
+  @apply text-zinc-400;
 }

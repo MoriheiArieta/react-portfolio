@@ -10,8 +10,9 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        'sans':['Courier Prime', 'sans-serif']
-      }
+        'sans':['Poppins', 'sans-serif']
+      },
+      
     },
   },
   plugins: [tailwindScrollbar],
